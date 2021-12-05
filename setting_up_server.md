@@ -9,7 +9,7 @@ github@shaggy-axel$ adduser <username> sudo
 ```console
 github@shaggy-axel$ sudo apt update && sudo apt install vim git
 github@shaggy-axel$ sudo vim /etc/ssh/sshd_config
-# Change `PermitRootLogin yes` to `PermitRootLogin no`
+github@shaggy-axel$ #Change `PermitRootLogin yes` to `PermitRootLogin no`
 ```
 3. Logout and create ssh keys
 ```console
@@ -21,11 +21,11 @@ github@shaggy-axel$ cat ~/.ssh/id_rsa.pub # Public Key
 ```
 4. Login and turn off Password Authentication
 ```console
-github@shaggy-axel$ # replace `~/.ssh/id_rsa` to your path to key
-github@shaggy-axel$ # default port is 22, you can blank this option
+github@shaggy-axel$ #replace `~/.ssh/id_rsa` to your path to key
+github@shaggy-axel$ #default port is 22, you can blank this option
 github@shaggy-axel$ ssh -i ~/.ssh/id_rsa <username>@<host> -p <port>
 github@shaggy-axel$ sudo vim /etc/ssh/sshd_config
-github@shaggy-axel$ # Replace `PasswordAuthentication yes` to `PasswordAuthentication no`
+github@shaggy-axel$ #Replace `PasswordAuthentication yes` to `PasswordAuthentication no`
 ```
 5. Install Docker, Docker-compose, Python
 * [Docker](https://docs.docker.com/engine/install/ubuntu/)
