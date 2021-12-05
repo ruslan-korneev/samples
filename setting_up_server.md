@@ -1,6 +1,6 @@
 1. Install sudo and adding new user to sudo group
 ```console
-github@shaggy-axel$ # login as root user
+github@shaggy-axel$ #login as root user
 github@shaggy-axel$ apt update && apt install sudo
 github@shaggy-axel$ adduser <username>
 github@shaggy-axel$ adduser <username> sudo
